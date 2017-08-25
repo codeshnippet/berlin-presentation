@@ -1,0 +1,45 @@
+
+0:
+While on WebDevCon I listened to a lot of talks.
+Some of them, I believe, could be useful to us, some other not so much.
+But two of them I found inspiring, and I would like to share their ideas with you.
+
+1:
+Before we dive into part one I would like to ask you if you have an answer to following question:
+- How good is our code?
+You may say: "Quite good" or "OK".
+But how can you reason about it? What is "good", what is "ok"?
+
+2:
+Sonarqube has an answer.
+
+3:
+Because Sonarqube gives you numbers. And with numbers taking about quality becomes so much easier.
+Those numbers are: complexity, code coverage, issues count and so on.
+
+4:
+"So what?" You ask. "Why should we care?"
+Good code or bad code, what matters is if it brings business value, right?
+Exactly! The most important thing is the business value.
+And business value goes hand in hand with cost.
+Producing bad code is cheaper for short projects, but very expensive for long lasting projects.
+And here's why:
+
+5:
+Imagine a complex piece of code, not covered with tests, not modularized, not abstract.
+
+believe me, that code contains more bugs.
+But the worst part is fixing them:
+ - Root cause is hard to find.
+ - Changing complicated code is hard too.
+ - In case there was low test coverage, there's a risk that your change broke something else.
+ - And there's no-one left to tell you how its supposed to work, because everyone got depressed and left the project.
+ - That is expensive.
+
+Hard to extend:
+ - Adding a feature takes longer because code is not abstract and is hard to extend. No extension points were designed.
+ - That is expensive.
+
+ Bad code is depressing:
+ - Nobody wants to deal with it. People leave the project.
+ - And that is very expensive.
