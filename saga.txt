@@ -1,10 +1,21 @@
+0: Into: I prepared two short (15 min) presentations based on two talks at WebDevCon 2017.
+I found inspiring, and would like to share their ideas with you. Lets start with the first one.
 
-0:
-While on WebDevCon I listened to a lot of talks.
-Some of them, I believe, could be useful to us, some other not so much.
-But two of them I found inspiring, and I would like to share their ideas with you.
+1: Presentation will (traditionally) be divided into 3 parts: What? Why? and How?
+Lets start with 'What'? And the answer is, good code.
+What is good code?
 
-1:
+2: In my opinion, good code is: easy to understand, easy to extend, easy to maintain.
+- (Understand) Code has to be simple, for others to read: colleagues, new-comers, yourself in half a year.
+- (Extend) It is often possible to predict how functionality will extend and create extension points for that.
+- (Maintain) Code has to be covered with tests and documented. Ideally tests will serve as documentation for the code.
+
+3:
+
+
+
+
+
 Before we dive into part one I would like to ask you if you have an answer to following question:
 - How good is our code?
 You may say: "Quite good" or "OK".

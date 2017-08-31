@@ -79,23 +79,41 @@ export default class Presentation extends React.Component {
         transition={["fade"]}
         transitionDuration={500}
       >
+
         <Slide style={skylineBg}>
-          <Heading size={4}>Thing I learned in Berlin</Heading>
+          <Heading size={3}>Code Quality</Heading>
           <Text margin="auto auto 5em auto">
-            @ WebDevCon 2-3 August 2017
+            Vitalii Kravets @ WebDevCon 2-3 August 2017
           </Text>
         </Slide>
+
         <Slide bgColor="white">
           <Heading
             caps
-            size={4}
+            size={3}
             style={{ letterSpacing: "0.05em" }}
           >
-            How good is our code?
+            What?
           </Heading>
-          <br/><br/>
-          <Image width="100%" src={images.badCode} />
+          <Text margin="auto auto 6em auto" textSize="2rem">
+            code quality
+          </Text>
         </Slide>
+
+        <Slide bgColor="white">
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Easy to understand
+          </Text>
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Easy to extend
+          </Text>
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Easy to maintain
+          </Text>
+        </Slide>
+
+        
+
         <Slide bgColor="white">
           <Image style={sponsor} width="100%" src={images.sonarqube} />
         </Slide>
