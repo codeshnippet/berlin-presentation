@@ -1,14 +1,14 @@
-# Spectacle Boilerplate
+# Code Quality Presentation
 
-## Reference
+## Link
 
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.markdown](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
+The presentation is available by link: http://code-quality.herokuapp.com/#/
+
+It is built using [The Spectacle core API](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
 
 ## Development
 
 After downloading the boilerplate, your first order of business is to open terminal and run `yarn`. (or `npm install` if you're about that life)
-
-Next, run `rm -R .git` to remove the existing version control.
 
 Then, to start up the local server, run `npm start`
 
