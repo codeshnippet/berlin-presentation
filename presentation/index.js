@@ -40,7 +40,9 @@ const images = {
   badCode: require("../assets/bad_code.jpg"),
   sonarqube: require("../assets/sonarqube.svg"),
   sonarqubeReport: require("../assets/sonarqube-report.png"),
-  soWhat: require("../assets/so-what.gif")
+  soWhat: require("../assets/so-what.gif"),
+  wtf: require("../assets/wtf.jpg"),
+  fin: require("../assets/fin.jpg")
 };
 
 preloader(images);
@@ -80,26 +82,29 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
       >
 
+        {/* Slide 0 Title*/}
         <Slide style={skylineBg}>
-          <Heading size={3}>Code Quality</Heading>
+          <Heading size={3}>GOOD CODE</Heading>
           <Text margin="auto auto 5em auto">
-            Vitalii Kravets @ WebDevCon 2-3 August 2017
+            by Vitalii Kravets
           </Text>
         </Slide>
 
+        {/* Slide 1 What?*/}
         <Slide bgColor="white">
           <Heading
             caps
             size={3}
             style={{ letterSpacing: "0.05em" }}
           >
-            What?
+            WHAT?
           </Heading>
           <Text margin="auto auto 6em auto" textSize="2rem">
-            code quality
+            good code
           </Text>
         </Slide>
 
+        {/* Slide 2 Definition*/}
         <Slide bgColor="white">
           <Text margin="auto auto 6em auto" textSize="3rem">
             Easy to understand
@@ -112,14 +117,7 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        
-
-        <Slide bgColor="white">
-          <Image style={sponsor} width="100%" src={images.sonarqube} />
-        </Slide>
-        <Slide bgColor="white">
-          <Image style={sponsor} width="100%" src={images.sonarqubeReport} />
-        </Slide>
+        {/* Slide 3 WHY? */}
         <Slide bgColor="black">
           <Image width="100%" src={images.soWhat} />
             <Heading
@@ -129,28 +127,53 @@ export default class Presentation extends React.Component {
             >
               So what?!
             </Heading>
+            <Text margin="auto auto 6em auto" textSize="2rem" textColor="white" >
+              (the 'why' part)
+            </Text>
         </Slide>
+
+        {/* Slide 4 The price */}
+        <Slide bgColor="white">
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Bad code is expensive
+          </Text>
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Bad code creates bad UX
+          </Text>
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Bad code causes depression
+          </Text>
+        </Slide>
+
+        {/* Slide 5 HOW? */}
         <Slide bgColor="white">
           <Heading
             caps
-            size={5}
+            size={3}
             style={{ letterSpacing: "0.05em" }}
           >
-            The cost of bad code:
+            HOW?
           </Heading>
-          <br/><br/>
-          <Text margin="auto auto 6em auto" textSize="3rem">
-            More bugs
-          </Text>
-          <Text margin="auto auto 6em auto" textSize="3rem">
-            Hard to extend
-          </Text>
-          <Text margin="auto auto 6em auto" textSize="3rem">
-            Depression
-          </Text>
         </Slide>
-        <Slide>
 
+        {/* Slide 6 WTF image*/}
+        <Slide bgColor="white">
+          <Image width="75%" src={images.wtf} />
+        </Slide>
+
+        {/* Slide 7 Sonar*/}
+        <Slide bgColor="white">
+          <Link href="http://lalala.com" target="_blank">
+            <Text margin="auto auto 6em auto" textSize="2rem">
+              Presentation video
+            </Text>
+          </Link>
+          <Image style={sponsor} src={images.sonarqubeReport} />
+        </Slide>
+
+        {/* Slide 8 FIN*/}
+        <Slide bgColor="black">
+          <Image width="100%" src={images.fin} />
         </Slide>
       </Deck>
     );

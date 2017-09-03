@@ -5,52 +5,38 @@ I found inspiring, and would like to share their ideas with you. Lets start with
 Lets start with 'What'? And the answer is, good code.
 What is good code?
 
-2: In my opinion, good code is: easy to understand, easy to extend, easy to maintain.
+2: Some resources were giving following definition, good code is: easy to understand, easy to extend, easy to maintain.
 - (Understand) Code has to be simple, for others to read: colleagues, new-comers, yourself in half a year.
 - (Extend) It is often possible to predict how functionality will extend and create extension points for that.
 - (Maintain) Code has to be covered with tests and documented. Ideally tests will serve as documentation for the code.
 
-3:
-
-
-
-
-
-Before we dive into part one I would like to ask you if you have an answer to following question:
-- How good is our code?
-You may say: "Quite good" or "OK".
-But how can you reason about it? What is "good", what is "ok"?
-
-2:
-Sonarqube has an answer.
-
-3:
-Because Sonarqube gives you numbers. And with numbers taking about quality becomes so much easier.
-Those numbers are: complexity, code coverage, issues count and so on.
-
-4:
-"So what?" You ask. "Why should we care?"
+3: "So what?!" you ask. "Why should we care?!"
 Good code or bad code, what matters is if it brings business value, right?
-Exactly! The most important thing is the business value.
-And business value goes hand in hand with cost.
-Producing bad code is cheaper for short projects, but very expensive for long lasting projects.
-And here's why:
 
-5:
-Imagine a complex piece of code, not covered with tests, not modularized, not abstract.
+4: Right! But bad code has some down sides:
+- (It's expensive) takes time to understand and change, that is developers time.
+- (It produces bad UX) often has lots of bugs. some of them are very twisted. Hard to find the root cause.
+Bad code is poorly tests covered - that means: fixing one thing, breaks the other.
+- (It causes depression) Working with good code is nice. Working with bad code is depressing.
+Developers start to see nightmares.
+People leave the project or even the company. And that is expensive.
 
-believe me, that code contains more bugs.
-But the worst part is fixing them:
- - Root cause is hard to find.
- - Changing complicated code is hard too.
- - In case there was low test coverage, there's a risk that your change broke something else.
- - And there's no-one left to tell you how its supposed to work, because everyone got depressed and left the project.
- - That is expensive.
+5: How?
+The how part. Before I give you an answer, can someone tell me 'How good is our code?'.
+It turns out this question is not easy to answer.
 
-Hard to extend:
- - Adding a feature takes longer because code is not abstract and is hard to extend. No extension points were designed.
- - That is expensive.
+6: One of the ways is to calculate number of WTFs/per minute during code review.
 
- Bad code is depressing:
- - Nobody wants to deal with it. People leave the project.
- - And that is very expensive.
+7: Another way is Sonar. When we want to talk about code quality, Sonar gives us numbers.
+Sonar will show us the code coverage,
+the complexity of the code we produced and
+scan the code in attempt to find some issues.
+I suggest you to watch a presentation from WebDevCon:
+http://presentation.com
+it explains how to use Sonar.
+
+8:FIN
+Now, we already have Sonar in place but don't use it much. We even discussed getting rid of it.
+There couple of ways to encourage using Sonar as a part of our proces:
+- Failing builds is a little harsh. We could set up an email notification for cases when a major issue was introduced in latest commit.
+- We could also use some gamification and set up a board with rating of issue solvers.
