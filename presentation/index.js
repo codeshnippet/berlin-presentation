@@ -84,9 +84,9 @@ export default class Presentation extends React.Component {
 
         {/* Slide 0 Title*/}
         <Slide style={skylineBg}>
-          <Heading size={3}>GOOD CODE</Heading>
+          <Heading size={3}>GOOD CODE RULES</Heading>
           <Text margin="auto auto 5em auto">
-            by Vitalii Kravets
+            Things I learned in Berlin
           </Text>
         </Slide>
 
