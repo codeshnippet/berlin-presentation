@@ -163,17 +163,24 @@ export default class Presentation extends React.Component {
 
         {/* Slide 7 Sonar*/}
         <Slide bgColor="white">
-          <Link href="http://lalala.com" target="_blank">
-            <Text margin="auto auto 6em auto" textSize="2rem">
-              Presentation video
-            </Text>
-          </Link>
-          <Image style={sponsor} src={images.sonarqubeReport} />
+          <Image  style={sponsor} src={images.sonarqubeReport} />
         </Slide>
 
         {/* Slide 8 FIN*/}
         <Slide bgColor="black">
           <Image width="100%" src={images.fin} />
+        </Slide>
+
+        {/* Slide 9 Useful links*/}
+        <Slide bgColor="white">
+          <Heading caps size={3} style={{ letterSpacing: "0.05em" }}>Useful links:</Heading>
+          <List>
+            <Link href="https://broadcast.amazon.com/videos/70057" target="_blank" style={{ textDecoration: "underline", color: "black" }}>
+              <ListItem style={{ textDecoration: "underline", color: "black" }} >SonarQube presentation video</ListItem>
+            </Link>
+            <ListItem>Expo</ListItem>
+            <ListItem>Spectacle</ListItem>
+          </List>
         </Slide>
       </Deck>
     );
