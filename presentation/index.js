@@ -118,16 +118,16 @@ export default class Presentation extends React.Component {
         </Slide>
 
         {/* Slide 3 WHY? */}
-        <Slide bgColor="black">
+        <Slide bgColor="white">
           <Image width="100%" src={images.soWhat} />
             <Heading
               caps
               size={4}
-              style={{ letterSpacing: "0.05em", color: "white" }}
+              style={{ letterSpacing: "0.05em", color: "black" }}
             >
               So what?!
             </Heading>
-            <Text margin="auto auto 6em auto" textSize="2rem" textColor="white" >
+            <Text margin="auto auto 6em auto" textSize="2rem" textColor="black" >
               (the 'why' part)
             </Text>
         </Slide>
