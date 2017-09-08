@@ -135,13 +135,13 @@ export default class Presentation extends React.Component {
         {/* Slide 4 The price */}
         <Slide bgColor="white">
           <Text margin="auto auto 6em auto" textSize="3rem">
-            Bad code is expensive
-          </Text>
-          <Text margin="auto auto 6em auto" textSize="3rem">
             Bad code creates bad UX
           </Text>
           <Text margin="auto auto 6em auto" textSize="3rem">
             Bad code causes depression
+          </Text>
+          <Text margin="auto auto 6em auto" textSize="3rem">
+            Bad code is expensive
           </Text>
         </Slide>
 
@@ -166,20 +166,27 @@ export default class Presentation extends React.Component {
           <Image  style={sponsor} src={images.sonarqubeReport} />
         </Slide>
 
-        {/* Slide 8 FIN*/}
+        {/* Slide 8 Suggestions*/}
+        <Slide bgColor="white">
+          <Heading caps size={3} style={{ letterSpacing: "0.05em" }}>Suggestion:</Heading>
+          <List>
+            <ListItem>Email notification</ListItem>
+            <ListItem>Board of issue solvers</ListItem>
+          </List>
+        </Slide>
+
+        {/* Slide 9 FIN*/}
         <Slide bgColor="black">
           <Image width="100%" src={images.fin} />
         </Slide>
 
-        {/* Slide 9 Useful links*/}
+        {/* Slide 10 Useful links*/}
         <Slide bgColor="white">
           <Heading caps size={3} style={{ letterSpacing: "0.05em" }}>Useful links:</Heading>
           <List>
             <Link href="https://broadcast.amazon.com/videos/70057" target="_blank" style={{ textDecoration: "underline", color: "black" }}>
               <ListItem style={{ textDecoration: "underline", color: "black" }} >SonarQube presentation video</ListItem>
             </Link>
-            <ListItem>Expo</ListItem>
-            <ListItem>Spectacle</ListItem>
           </List>
         </Slide>
       </Deck>

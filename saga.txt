@@ -28,15 +28,18 @@ It turns out this question is not easy to answer.
 6: One of the ways is to calculate number of WTFs/per minute during code review.
 
 7: Another way is Sonar. When we want to talk about code quality, Sonar gives us numbers.
-Sonar will show us the code coverage,
+Sonar will show us the test coverage,
 the complexity of the code we produced and
 scan the code in attempt to find some issues.
 I suggest you to watch a presentation from WebDevCon:
 http://presentation.com
 it explains how to use Sonar.
 
-8:FIN
-Now, we already have Sonar in place but don't use it much. We even discussed getting rid of it.
-There couple of ways to encourage using Sonar as a part of our proces:
+8: There couple of ways to encourage using Sonar as a part of our proces:
 - Failing builds is a little harsh. We could set up an email notification for cases when a major issue was introduced in latest commit.
 - We could also use some gamification and set up a board with rating of issue solvers.
+
+9:FIN
+Now, we already have Sonar in place but don't use it much. We even discussed getting rid of it.
+
+~ 8 minutes without questions
