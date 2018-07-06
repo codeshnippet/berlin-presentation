@@ -2,7 +2,7 @@
 
 ## Link
 
-The presentation is available by link: http://code-quality.herokuapp.com/#/
+The presentation is available by link: https://good-code.herokuapp.com/
 
 It is built using [The Spectacle core API](https://github.com/FormidableLabs/spectacle/blob/master/README.markdown).
 
